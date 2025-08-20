@@ -8,3 +8,4 @@
 - Endpoint security with API key header
 - Database access with SQLModel
 - Dockerfile and docker-compose.yml examples
+- Tests with pytest already configured
