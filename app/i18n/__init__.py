@@ -7,6 +7,7 @@ from app.settings import LANGUAGE_CODE
 logger = logging.getLogger(__name__)
 
 
+# pylint: disable=:attribute-defined-outside-init
 class TranslationWrapper:
     _instance = None
 
@@ -17,7 +18,7 @@ class TranslationWrapper:
         return cls._instance
 
     def init_translation(self):
-        locales_dir = Path(__file__).parent / "translations"
+        locales_dir = Path(__file__).parent.parent / "translations"
         self.translations = gettext.translation(
             "messages", localedir=locales_dir, languages=[LANGUAGE_CODE], fallback=True
         )
@@ -32,7 +33,6 @@ async def set_locale(lang: str):
 
     locales_dir = Path(__file__).parent.parent / "translations"
 
-    # pylint: disable=:attribute-defined-outside-init
     translation_wrapper.translations = gettext.translation(
         "messages", localedir=locales_dir, languages=[lang], fallback=True
     )
