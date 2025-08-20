@@ -7,3 +7,4 @@
 - Use webhook to improve scalability and performance
 - Endpoint security with API key header
 - Database access with SQLModel
+- Dockerfile and docker-compose.yml examples
