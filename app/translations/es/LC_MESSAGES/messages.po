@@ -1,0 +1,40 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-08-19 22:10-0400\n"
+"PO-Revision-Date: 2025-08-19 10:04-0400\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: app/bot/clon/handlers.py:9
+msgid "Hi from bot clon"
+msgstr "Hola desde el bot clon"
+
+#: app/bot/father/handlers.py:22
+msgid "Hi from bot father, send bot token to clone"
+msgstr "Hola desde el bot padre, envía el token del bot a clonar"
+
+#: app/bot/father/handlers.py:53
+msgid "Done"
+msgstr "Hecho"
+
+#: app/bot/father/handlers.py:58
+msgid "Error"
+msgstr "Error"
+
+#: app/utils/decorators.py:24
+msgid "You are not authorized"
+msgstr "No estás autorizado"
+
