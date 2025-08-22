@@ -27,6 +27,8 @@ async def process_telegram_event(update_json: dict, session: SessionDep, bot: Bo
         first_name = update.effective_user.first_name
         username = update.effective_user.username
 
+    update.db_session = session
+
     if user_id:
 
         user = session.get(User, user_id)
@@ -41,7 +43,6 @@ async def process_telegram_event(update_json: dict, session: SessionDep, bot: Bo
             session.add(ctxt)
             session.commit()
 
-        update.db_session = session
         update.db_bot = bot
         update.db_user = user
         update.db_user_context = ctxt
