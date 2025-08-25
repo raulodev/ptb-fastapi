@@ -40,7 +40,7 @@ app = FastAPI(title="Ptb fastapi template", lifespan=lifespan)
 
 
 @app.middleware("http")
-async def add_process_time_header(request: Request, call_next):
+async def set_language(request: Request, call_next):
 
     if (
         request.method == "POST"
