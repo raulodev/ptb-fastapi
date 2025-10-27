@@ -1,5 +1,5 @@
-fastapi[standard]==0.116.1
-python-telegram-bot==22.3
+fastapi[standard]==0.120.0
+python-telegram-bot==22.5
 python-decouple==3.8
-sqlmodel==0.0.24
+sqlmodel==0.0.27
 async-lru==2.0.5
